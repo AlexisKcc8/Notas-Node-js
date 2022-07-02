@@ -1,0 +1,5 @@
+video - 3_ principios-http
+instalamos la dependencia nodemon (npm i -E -D nodemon) para vigilar el archivo como una especie de live server y en el package cambiamos a 
+"scripts": {
+    "dev": "nodemon ./3_http-server.js" (o cualquier otro nombre de archivo)
+},

@@ -141,13 +141,14 @@ serverApp.get("/users/posts", (req, res)=>{
 })
 serverApp.get("/users/posts/:idPost", (req, res)=>{
     let idPost = Number(req.params.idPost);
-    let post = data.find((post) => post.id === idPost)
-    if(post === undefined){
-        res.status(404).send({
-            errorMessage : "post not found" 
-        });
-    }
-    res.send(post)
+    let post = data.find((post) => post.id === idPost);
+    console.log(post);
+    // if(post === undefined){
+    //     res.status(404).send({
+    //         errorMessage : "post not found" 
+    //     });
+    // }
+    // res.send(post)
 })
 serverApp.post('/users/posts', (req, res)=>{
     // req.query es para obtener los parametros del endpoint

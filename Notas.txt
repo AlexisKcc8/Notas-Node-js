@@ -3,3 +3,15 @@ instalamos la dependencia nodemon (npm i -E -D nodemon) para vigilar el archivo 
 "scripts": {
     "dev": "nodemon ./3_http-server.js" (o cualquier otro nombre de archivo)
 },
+
+video - 6_ router y middleware 
+se crearon los archivos .env y .env-example para las variables de entorno
+NOTA: EL ".env" no se sube por nada del mundo al repositorio
+
+la dependencia dotenv (npm i dotenv) lo que hace es leer el archivo .env y meter en la
+variable global process.env los valores que tenga dicho archivo, podemos acceder con la 
+notacion del . de la siguiente manera:
+    procces.env.PORT - en el archivo .env debe estar PORT = ALGO;
+
+Un router no es mas que una mini aplicacion de express contenida en un aplicacion de express mas grande,
+es decir, nos permite agrupar y aislar un conjunto de rutas

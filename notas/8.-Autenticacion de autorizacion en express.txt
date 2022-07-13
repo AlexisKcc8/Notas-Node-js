@@ -1,0 +1,3 @@
+-------------------------- Autenticacion vs Autorizacion --------------------------
+Autenticacion : Mecanismo para comprobar que ALGUIEN ES QUIEN DICE SER. Se utiliza el codigo 401 (No autorizacion)
+Autorizacion : Mecanismo para comprobar que ALGUIEN TIENE ACCESO A ALGO. Se utliza el codigo 403 (Forbbiden)

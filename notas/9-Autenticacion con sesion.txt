@@ -1,0 +1,19 @@
+Autenticacion por SESION
+-en el caso de la sesion se comprueban si el email y el pwd son validos y de ser asi se genera un objeto sessionID y se guarda la info en una BBDD, memoria...
+
+-lo que hace el servidor cuando hacemos login es meter la sessionID en la cabecera cookie
+
+
+DIFERENCIAS entre SESIÓN y TOKEN
+
+Sesion                              Token
+Solo es un ID                     Puede contener informacion
+Envio automatico al dominio       Envio de cabecera "manual".
+Validacion menos segura.          Validacion más segura.
+
+instalamos nanoid para generar identificadores 
+npm i nanoid
+
+instalamos cookie-parse para que express pueda leer las cookies
+de la request 
+npm i cookie-parse
